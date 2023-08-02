@@ -3,7 +3,7 @@ import tkinter as tk
 from PIL import ImageTk, Image
 
 # Define constants
-API_KEY = "your-api-here"  # Get your API key from OpenWeatherMap
+API_KEY = "your-api-key"  # Get your API key from OpenWeatherMap
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
 CITY_NAME = "Rome, IT"  # Change this to any city you want, followed by a comma and ISO 3166-2 country code
 
@@ -68,12 +68,14 @@ try:
 
         # Create text label for city name
         city_label = tk.Label(window, text=CITY_NAME, font=("Arial", 20), bg="light blue")
+        city_label.configure(fg="black")
         city_label.pack()
 
         # Create text label for weather information
         info_label = tk.Label(window,
                               text=f"{weather}: {description}\nTemperature: {temp:.0f}°C\nFeels like: {feels_like:.0f}°C\nMin temp: {temp_min:.0f}°C\nMax temp: {temp_max:.0f}°C\nPressure: {pressure} hPa\nHumidity: {humidity}%",
                               font=("Arial", 10), bg="light blue")
+        info_label.configure(fg="black")
         info_label.pack()
 
         #Call function to center window
