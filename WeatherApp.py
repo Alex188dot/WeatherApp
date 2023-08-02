@@ -3,12 +3,27 @@ import tkinter as tk
 from PIL import ImageTk, Image
 
 # Define constants
-API_KEY = "your-api-goes-here"  # Get your API key from OpenWeatherMap
+API_KEY = "your-api-here"  # Get your API key from OpenWeatherMap
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
 CITY_NAME = "Rome, IT"  # Change this to any city you want, followed by a comma and ISO 3166-2 country code
 
 # Make API call and get response
 URL = BASE_URL + "q=" + CITY_NAME + "&appid=" + API_KEY
+
+# This code will center the window
+def centerWindow(window):
+    width = 600  # Width
+    height = 400  # Height
+
+    screen_width = window.winfo_screenwidth()  # Width of the screen
+    screen_height = window.winfo_screenheight()  # Height of the screen
+
+    # Calculate Starting X and Y coordinates for Window
+    x = (screen_width / 2) - (width / 2)
+    y = (screen_height / 2) - (height / 2)
+
+    window.geometry('%dx%d+%d+%d' % (width, height, x, y))
+
 
 try:
     response = requests.get(URL)
@@ -61,6 +76,8 @@ try:
                               font=("Arial", 10), bg="light blue")
         info_label.pack()
 
+        #Call function to center window
+        centerWindow(window)
         # Start GUI loop
         window.mainloop()
     else:  # The request was not successful
