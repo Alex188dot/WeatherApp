@@ -27,11 +27,18 @@ A GUI window will pop up showing an image of the current weather conditions and 
 
 Here is an example of how the app looks like with different weather conditions:
 
-<img width="597" alt="WA1" src="https://github.com/Alex188dot/WeatherApp/assets/117444853/4478f737-6264-40b4-9d29-81b66b6bd932">
+<p align="center">
+  <img width="597" alt="WA1" src="https://github.com/Alex188dot/WeatherApp/assets/117444853/4478f737-6264-40b4-9d29-81b66b6bd932">
+</p>
 
-<img width="592" alt="WA2" src="https://github.com/Alex188dot/WeatherApp/assets/117444853/0ce3f43c-e16a-4306-8ab2-659c3968fd54">
+<p align="center">
+  <img width="592" alt="WA2" src="https://github.com/Alex188dot/WeatherApp/assets/117444853/0ce3f43c-e16a-4306-8ab2-659c3968fd54">
+</p>
 
-<img width="597" alt="WA3" src="https://github.com/Alex188dot/WeatherApp/assets/117444853/f9ecbba0-5999-4c95-b270-0c676f4d702c">
+<p align="center">
+  <img width="597" alt="WA3" src="https://github.com/Alex188dot/WeatherApp/assets/117444853/f9ecbba0-5999-4c95-b270-0c676f4d702c">
+</p>
 
-<img width="594" alt="WA4" src="https://github.com/Alex188dot/WeatherApp/assets/117444853/32a5809c-8c8d-453e-b3a5-5c28424199c6">
-
+<p align="center">
+  <img width="594" alt="WA4" src="https://github.com/Alex188dot/WeatherApp/assets/117444853/32a5809c-8c8d-453e-b3a5-5c28424199c6">
+</p>
